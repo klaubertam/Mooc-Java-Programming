@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+public class Stack {
+    
+    
+    ArrayList<String> stack;
+    public Stack(){
+        this.stack=new ArrayList<>();
+    }
+    
+    public boolean isEmpty(){
+    if(stack.isEmpty()){
+    return true;}
+    return false;}
+    
+    public void add(String value){
+        stack.add(value);
+    }
+    public ArrayList<String> values(){
+    return new ArrayList<>(stack);
+    }
+    
+    public String take(){
+        String taken=stack.get(stack.size()-1);
+        stack.remove(stack.size()-1);
+        return taken;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
